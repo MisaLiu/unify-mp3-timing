@@ -2,7 +2,7 @@
   "name": "unify-mp3-timing",
   "version": "1.0.1",
   "description": "workarounds inconsistent behavior of decodeAudioData on mp3 files",
-  "main": "lib/main.js",
+  "main": "main.js",
   "directories": {
     "lib": "lib"
   },
