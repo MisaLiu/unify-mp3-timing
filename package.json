@@ -1,0 +1,22 @@
+{
+  "name": "unify-mp3-timing",
+  "version": "1.0.0",
+  "description": "workarounds inconsistent behavior of decodeAudioData on mp3 files",
+  "main": "lib/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisaLiu/unify-mp3-timing.git"
+  },
+  "author": "111116 <fenggaobuke@gmail.com> & biril <alexlambiris@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MisaLiu/unify-mp3-timing/issues"
+  },
+  "homepage": "https://github.com/MisaLiu/unify-mp3-timing#readme"
+}
