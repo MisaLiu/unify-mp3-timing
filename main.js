@@ -123,6 +123,7 @@
     //  description of located Xing / Lame tag and a description of the a located first frame
     //  ( See [this](http://www.rengels.de/computer/mp3tags.html) and
     //  [this](http://stackoverflow.com/a/5013505) )
+    // MODIFIED: Bug fix, see: https://github.com/111116/webosu/commit/fe88d078d18955f6d0cd6b02f018ff0098c54901
     mp3Parser.readTags = function (view, offset) {
         offset || (offset = 0);
 
@@ -143,7 +144,7 @@
                 // If one of the readers successfully parses a section ..
                 if (section) {
                     // .. store it ..
-                    sections.push(section);
+                    sections.push(section && section._section.byteLength);
 
                     // .. and push the offset to the very end of end of that section. This way,
                     //  we avoid iterating over offsets which definately aren't the begining of
