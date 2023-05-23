@@ -142,9 +142,9 @@
                 section = readers[i](view, offset);
 
                 // If one of the readers successfully parses a section ..
-                if (section) {
+                if (section && section._section.byteLength) {
                     // .. store it ..
-                    sections.push(section && section._section.byteLength);
+                    sections.push(section);
 
                     // .. and push the offset to the very end of end of that section. This way,
                     //  we avoid iterating over offsets which definately aren't the begining of
